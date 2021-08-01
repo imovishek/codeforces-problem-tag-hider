@@ -1,0 +1,23 @@
+{
+	"name": "Codeforces Problem Tag Hider",
+	"version": "0.0",
+	"manifest_version": 2,
+	"content_scripts": [
+		{
+			"matches":["https://codeforces.com/*"],
+			"js": ["content.js"]
+		}
+	],
+	"browser_action": {
+		"default_popup": "popup.html",
+		"default_title": "Codeforces Problem Tag Hider!",
+		"default_icon": "myicon.png"
+	},
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false	
+	},
+	"permissions": [
+		"storage"
+	]
+}
